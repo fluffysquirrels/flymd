@@ -20,10 +20,7 @@ There are two solutions:
    Add this to your `init` file.
 
    ``` elisp
-    (defun my-flymd-browser-function (url)
-      (let ((browse-url-browser-function 'browse-url-firefox))
-        (browse-url url)))
-    (setq flymd-browser-open-function 'my-flymd-browser-function)
+    (setq flymd-browser-open-function 'browse-url-firefox)
    ```
 
 - **Solution 2**: Still using google chrome. But you need to kill all google chrome process before using `flymd-flyit`. This is not recommended.
